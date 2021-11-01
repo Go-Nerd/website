@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.header .nav ol{
+    list-style: none;
+    display: flex;
+}
+.header .nav ol li{
+    margin: 5px;
+    font-size: 1.2em;
+}
+.header .nav ol li a{
+    padding: 0.5em 2em;
+    color: black;
+    text-decoration: none;
+    transition: background 1s;
+    border-radius: 10px;
+}
+.header .nav ol li a:hover{
+    background: #F2D64B;
+}
+
+/* Main Section */
+.main{
+    width: 90%;
+    height: 40em;
+    margin: 20px auto;
+    padding-top: 2em;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    background: #F2D64B;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+h1, p{
+    margin: 15px 0;
+}
+.right img{
+    width: 35em;
+}
+/* Course Content */
+.courseContent{
+    width: 60%;
+    margin: auto;
+}
+.frontend{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rowR{
+    flex-direction: row-reverse;
+}
+.frontend .right img{
+    width: 20em;
+}
+
+/* Media Query */
+
+@media (max-width: 1000px) {
+    body{
+        font-size: 10px;
+    }
+    .right img{
+        width: 40em;
+    }
+    .courseContent{
+        width: 70%;
+    }
+    .frontend .right img{
+        width: 15em;
+    }
+}
+
+@media (max-width: 700px) {
+    body{
+        font-size: 10px;
+    }
+    .main{
+        height: 50em;
+        flex-direction: column-reverse;
+    }
+    .right img{
+        width: 25em;
+    }
+    .courseContent{
+        width: 75%;
+    }
+    .frontend .right img{
+        width: 15em;
+    }
+}
+
+@media (max-width: 600px) {
+    .frontend, .rowR{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 460px) {
+    body{
+        font-size: 8px;
+    }
+}
