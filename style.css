@@ -6,6 +6,9 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+:root{
+    --hover-color: #2E62A6;
+}
 .header{
     width: 90%;
     height: 80px;
@@ -16,8 +19,8 @@
 }
 .header .logo img{
     width: 60px;
-    height: 60px;
-    border-radius: 50px;
+    /* height: 60px; */
+    /* border-radius: 50px; */
 }
 .header .nav ol{
     list-style: none;
@@ -36,12 +39,14 @@
 }
 .header .nav ol li a:hover{
     background: #F2D64B;
+    color: white;
+    background: var(--hover-color);
 }
 
 /* Main Section */
 .main{
     width: 90%;
-    height: 40em;
+    height: 35em;
     margin: 20px auto;
     padding-top: 2em;
     display: flex;
@@ -57,14 +62,21 @@
     text-decoration: none;
     border: none;
     background: #F2D64B;
-    color: rgb(20, 20, 20);
+    color: white;
+    background: var(--hover-color);
     cursor: pointer;
 }
-h1, p{
-    margin: 15px 0;
+.courseBtn{
+    margin-top: 12em;
+}
+h1{
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 35px;
 }
 .right img{
-    width: 35em;
+    width: 25em;
 }
 /* Course Content */
 .courseContent{
