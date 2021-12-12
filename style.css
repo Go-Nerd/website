@@ -82,6 +82,7 @@ p{
 .courseContent{
     width: 60%;
     margin: auto;
+    padding-bottom: 66px;
 }
 .frontend{
     margin: 50px 0;
